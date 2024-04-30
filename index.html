@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClothingProductPagebyLikitha</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="product-container">
+    <div class="product-images">
+        <img id="main-image" src="assets\Productimage.png" >
+        <div class="thumbnail-images" id="thumbnail-images"></div>
+    </div>
+    <div class="product-details">
+        <h2 id="product-vendor"></h2>
+        <h1 id="product-title"></h1>
+        <div class="price-details">
+            <span id="price"></span><label>&nbsp;<label>&nbsp;</label>
+            <span id="discount-percent"></span>
+        <div>
+            <span id="compare-at-price"></span>
+        </div>
+            <hr style="width: 70%;margin-left: 0;">
+    </div>
+    <h5>Choose a Color</h5>
+    <div class="variant-selector" id="color-variants"></div>
+    <hr style="width: 70%;margin-left: 0;">
+    <h5>Choose a Size</h5>
+    <div class="variant-selector" id="size-variants">
+    </div>
+        
+    <div id="quantity-selector">
+            <button id="decrement" style="color: #726C6C;">-</button>
+            <input type="text" id="quantity" value="1" readonly>
+            <button id="increment">+</button>
+    </div>
+    <button id="add-to-cart">Add to Cart</button>
+    <div id="add-to-cart-message" class="hidden"></div>
+    <hr style="width: 70%;margin-left: 0;">
+    <div id="description" style="font-size: 20px;"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
